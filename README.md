@@ -10,3 +10,5 @@ To compute a pseudo match rate between 2 distant files, we need to compute their
 It is possible to use the `certainty` function which will give an idea of the probability that 2 files are variants of each other.
 
 Due to the small size of the uint32_t used, the program builds its hash only on the first 4 GB of a file.
+
+The main.c program is an example of utilisation.

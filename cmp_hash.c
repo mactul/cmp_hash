@@ -116,7 +116,5 @@ char check_hash_integrity(Cmp_hash* phash)
         size += phash->data_occ[i];
     }
 
-    printf("%d %d\n", size, phash->size);
-
     return size == phash->size;
 }

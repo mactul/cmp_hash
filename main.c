@@ -16,7 +16,13 @@ int main()
         printf("Error File Not Found\n");
         return 1;
     }
+
+    if(check_hash_integrity(&hash1))
+    {
+        printf("hash1 has intergrity\n");
+    }
     
     printf("These 2 files are variants with a certainty of %f %%\n", 100*certainty(cmp_two_hashes(&hash1,&hash2)));
+
     return 0;
 }

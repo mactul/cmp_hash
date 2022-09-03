@@ -6,12 +6,12 @@ int main()
     Cmp_hash hash1;
     Cmp_hash hash2;
     
-    if(cmp_create_hash(&hash1, "test1.bin") != OK)
+    if(cmp_create_hash(&hash1, "test1.txt") != OK)
     {
         printf("Error File Not Found\n");
         return 1;
     }
-    if(cmp_create_hash(&hash2, "test2.bin") != OK)
+    if(cmp_create_hash(&hash2, "test2.txt") != OK)
     {
         printf("Error File Not Found\n");
         return 1;
